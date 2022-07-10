@@ -16,9 +16,9 @@
 // Решение 1
 Console.Clear();
 Console.WriteLine("Введите координаты точки");
-Console.WriteLine("X: ");
+Console.Write("X: ");
 int x = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Y: ");
+Console.Write("Y: ");
 int y = Convert.ToInt32(Console.ReadLine());
 
 // if (x > 0 && y > 0) Console.WriteLine("1 четверть");
