@@ -22,11 +22,11 @@ double by = Convert.ToDouble(Console.ReadLine());
                                 // + ((by - ay) * (by - ay))),
                                 // 2);
 
-double Square(double x,double y)
-{
-    double res = (y - x) * (y - x);
-    return res;
-}
+// double Square(double x,double y)
+// {
+//     double res = (y - x) * (y - x);
+//     return res;
+// }
 
-double AB = Math.Round(Math.Sqrt((Square(ax,bx)) + Square(ay,by)),2);
-Console.WriteLine($"Расстояние между точками: {AB} ");
+double AB = Math.Sqrt(Math.Pow((bx - ax),2) + Math.Pow((by - ay),2));
+Console.WriteLine($"Расстояние между точками: {Math.Round(AB,2)} ");
