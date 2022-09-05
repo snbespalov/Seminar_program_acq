@@ -6,6 +6,6 @@ count = Convert.ToInt32(Console.ReadLine());
 
 for(x = -count; x <= count; x++)
 {
-    if(x % 1 == 0);
+    if(x % 1 == 0)
     Console.WriteLine(x);
 }
