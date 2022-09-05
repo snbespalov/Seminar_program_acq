@@ -7,13 +7,11 @@
 
 Console.WriteLine("Покажу вам третью цифру числа, которое вы введете.");
 Console.WriteLine("Введите число");
-string num1 = Console.ReadLine();
-char[] countNum;
-
-countNum = num1.ToCharArray();
-
-if (countNum.Length >= 3 )
-{
-    Console.WriteLine($"Третья цифра: {countNum.GetValue(2)}");
+int userNumber = Convert.ToInt32(Console.ReadLine());
+string anyNumberText = Convert.ToString(userNumber);
+if (anyNumberText.Length > 2){
+  Console.WriteLine("третья цифра -> " + anyNumberText[2]);
 }
-else Console.WriteLine("В значении меньше 3 цифр.");
+else {
+  Console.WriteLine("-> третьей цифры нет");
+}
