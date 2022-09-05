@@ -9,12 +9,10 @@
 // Решение 1
 Console.WriteLine("Покажу вам вторую цифру трёхзначного числа, которое вы введете.");
 Console.WriteLine("Введите трёхзначное число");
-string num1 = Console.ReadLine();
-char[] countNum;
+int num = Convert.ToInt32(Console.ReadLine());
+int secondNum = num % 100 / 10;
 
-countNum = num1.ToCharArray(0,2);
-
-Console.WriteLine($"Второе число: {countNum.GetValue(1)}");
+Console.WriteLine($"Второе число: {secondNum}");
 
 
 
